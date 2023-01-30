@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+    font-family:sans-serif;
+    font-weight: 100;
+
+}
+/*navbar*/
+
+nav{
+    display:flex;
+    justify-content: space-around;
+   align-items: center;
+   min-height: 100px;
+   background-color:#000;
+   color:rgb(255, 255, 255);
+}
+.logo{
+    color:rgb(255, 255, 255);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    
+    animation: logo 1.2s ease-in-out infinite alternate;
+    
+}
+
+@keyframes logo{
+    from{transform:scaleY(1);}
+    to{transform: scaleY(1.3);}
+}
+.nav{
+    display:flex;
+    justify-content:space-around;
+    width: 30%;
+}
+.nav li{
+    list-style: none;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding:20px;
+    letter-spacing:1px;
+    text-transform: uppercase;
+}
+.menu-icon {
+   display:none;
+   cursor:pointer;
+   width:30px;
+    background-color: white;
+    height:3px;
+}
+
+
+@media  screen and (max-width:1024px) {
+    .nav{
+        width:60%;
+    }
+    
+}
+@media  screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        position:absolute;
+        right:-100%;
+        height: 90vh;
+        top:10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform:translateX(100%);
+        transition:transform 0.5s ease-in-out;
+    }
+    .menu-icon {
+        display: block;
+        background-color: white;
+    }
+    .nav-active{
+        transform: translateX(-100%);
+    }
+    .menu-icon-active .top{
+        transform: rotate(-45deg) translate(-5px, -6px);
+    }
+    .menu-icon-active .middle{
+        opacity:0;
+    }
+    .menu-icon-active .bottom{
+        transform: rotate(45deg) translate(-5px, -6px); 
+    }
+}
+/*gallery*/
+
+.gallery ul{
+    display:flex;
+    flex-wrap:wrap;
+    list-style: none;
+}
+.gallery li{
+    height:60vh;
+    flex-grow:1;
+    margin:1vmin;
+}
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit:cover;
+
+}
+img:hover{
+    filter:blur(2px) grayscale(50%)
+}
