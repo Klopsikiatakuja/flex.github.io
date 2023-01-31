@@ -83,7 +83,8 @@ li a{
         display: block;
         background-color: white;
     }
- 
+    
+}
 /*gallery*/
 
 .gallery ul{
@@ -92,7 +93,7 @@ li a{
     list-style: none;
 }
 .gallery li{
-    height:60vh;
+    height:50vh;
     flex-grow:1;
     margin:1vmin;
 }
