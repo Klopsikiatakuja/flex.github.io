@@ -61,6 +61,10 @@ li a{
 @media  screen and (max-width:1024px) {
     .nav{
         width:60%;
+
+    }
+    .gallery ul{
+        display:flex;
     }
     
 }
@@ -93,7 +97,7 @@ li a{
     list-style: none;
 }
 .gallery li{
-    height:50vh;
+    height:60vh;
     flex-grow:1;
     margin:1vmin;
 }
