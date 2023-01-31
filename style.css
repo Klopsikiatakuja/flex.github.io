@@ -83,19 +83,7 @@ li a{
         display: block;
         background-color: white;
     }
-    .nav-active{
-        transform: translateX(-100%);
-    }
-    .menu-icon-active .top{
-        transform: rotate(-45deg) translate(-5px, -6px);
-    }
-    .menu-icon-active .middle{
-        opacity:0;
-    }
-    .menu-icon-active .bottom{
-        transform: rotate(45deg) translate(-5px, -6px); 
-    }
-}
+ 
 /*gallery*/
 
 .gallery ul{
